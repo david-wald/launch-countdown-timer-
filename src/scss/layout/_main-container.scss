@@ -1,3 +1,4 @@
+@use "../abstracts/mixins";
 
 .main-container {
     height: 75vh;
@@ -5,4 +6,8 @@
     flex-direction: column;
     display: flex;
     justify-content: center;
+
+    @include mixins.height {
+        height: 70vh;
+    }
 }

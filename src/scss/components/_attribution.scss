@@ -23,4 +23,8 @@
     @include mixins.large {
         font-size: 16px;
     }
+
+    @include mixins.height {
+        top: 82.5%;
+    }
 }
