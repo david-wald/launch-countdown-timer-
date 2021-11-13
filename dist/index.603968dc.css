@@ -245,6 +245,11 @@ a {
     font-size: 16px;
   }
 }
+@media (max-height: 546px) {
+  .attribution {
+    top: 93.5%;
+  }
+}
 /* ABSTRACTS */
 /* BASE */
 /* LAYOUT */
