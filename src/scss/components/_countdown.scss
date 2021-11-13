@@ -1,0 +1,133 @@
+@use "../abstracts/mixins";
+@use "../abstracts/colors";
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+.countdown {
+    
+    text-align: center;
+
+    & + & {
+        margin-left: 15px;
+    }
+    
+    &__top {
+        background: #2c2c44;
+        width: 70px;
+        height: 35px;
+        border-radius: 5px;
+        border-bottom: 1px solid colors.$very-dark-mostly-black;
+
+        @include mixins.extra-small {
+            width: 73px;
+            height: 36.5px;
+        }
+
+        @include mixins.small {
+            width: 82px;
+            height: 41px;
+        }
+
+        @include mixins.medium {
+            width: 100px;
+            height: 50px;
+        }
+
+        @include mixins.large {
+            width: 115px;
+            height: 57.5px;
+        }  
+
+        @include mixins.extra-large {
+            width: 130px;
+            height: 65px;
+        }
+    }
+
+    &__bottom {
+        background: #343650;
+        width: 70px;
+        height: 35px;
+        border-radius: 5px;
+        box-shadow: 0 6px 0 0 colors.$very-dark-mostly-black;
+
+        @include mixins.extra-small {
+            width: 73px;
+            height: 36.5px;
+        }
+
+        @include mixins.small {
+            width: 82px;
+            height: 41px;
+     }
+
+        @include mixins.medium {
+            width: 100px;
+            height: 50px;
+        }
+
+        @include mixins.large {
+            width: 115px;
+            height: 57.5px;
+        }    
+
+        @include mixins.extra-large {
+            width: 130px;
+            height: 65px;
+        }
+    }
+
+    &__time {
+       font-size: 37px;
+       position: absolute;
+       top: 33.5%;
+       transform: translate(-50%);
+       color: colors.$soft-red;
+
+       @include mixins.extra-small {
+           font-size: 39px;
+           top: 35.6%;
+    }
+
+        @include mixins.small { 
+            font-size: 42px;
+            top: 35%;
+        }
+
+        @include mixins.medium {
+            font-size: 48px;
+            top: 34.5%
+        }
+
+        @include mixins.large {
+            font-size: 53px;
+            top: 33.6%;
+        }  
+
+        @include mixins.extra-large {
+            font-size: 60px;
+            top: 32.5%;
+        }
+       
+       
+    }
+
+    &__description {
+        margin-top: 11px;
+        color: colors.$grayish-blue;
+        font-size: 8.2px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        @include mixins.extra-small {
+            font-size: 9px;
+        }
+
+        @include mixins.large {
+            font-size: 11px;
+        }
+
+        @include mixins.extra-large {
+            font-size: 14px;
+        }
+    }
+}

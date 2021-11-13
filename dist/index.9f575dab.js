@@ -1,0 +1,2 @@
+function timer(){const e=new Date("01 Jan 2022 00:00:00")-new Date,t=Math.floor(e/864e5),n=Math.floor(e/36e5),o=Math.floor(e/6e4),r=Math.floor(e/1e3),l=t;let a=n-24*t,m=o-60*n,d=r-60*o;a<10&&(a="0"+a),m<10&&(m="0"+m),d<10&&(d="0"+d),document.getElementById("days").innerHTML=l,document.getElementById("hours").innerHTML=a,document.getElementById("minutes").innerHTML=m,document.getElementById("seconds").innerHTML=d,r<1&&clearInterval(interval)}const interval=setInterval(timer,1e3);
+//# sourceMappingURL=index.9f575dab.js.map

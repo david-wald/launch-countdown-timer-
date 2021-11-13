@@ -1,0 +1,17 @@
+
+.socials {
+    display: flex;
+
+    &__item:nth-child(2) {
+        margin: 0 25px 0 25px;
+    }
+
+   &__img {
+       &:hover {
+        color: hsl(345, 95%, 68%);
+        filter: invert(58%) sepia(38%) saturate(4955%) hue-rotate(310deg)
+        brightness(101%) contrast(102%);
+       }
+   }
+}
+
