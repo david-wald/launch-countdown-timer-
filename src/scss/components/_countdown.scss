@@ -4,11 +4,19 @@
 
 .countdown {
     
-    text-align: center;
+   /*  text-align: center; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-left: 15px; */
+   
+    align-items: center;
 
     & + & {
         margin-left: 15px;
     }
+
     
     &__top {
         background: #2c2c44;
@@ -78,38 +86,35 @@
 
     &__time {
        font-size: 37px;
+        height: 76%;
+       
        position: absolute;
-       top: 38.5%;
-       transform: translate(-50%);
+       
+      
        color: colors.$soft-red;
+       text-align: center;
 
        @include mixins.extra-small {
            font-size: 39px;
-           top: 36.2%;
+          
     }
 
         @include mixins.small { 
             font-size: 42px;
-            top: 35.8%;
         }
 
         @include mixins.medium {
             font-size: 48px;
-            top: 35.3%
+            height: 70%;
         }
 
         @include mixins.large {
             font-size: 53px;
-            top: 34.6%;
         }  
 
         @include mixins.extra-large {
             font-size: 60px;
-            top: 33.7%;
-            
         }
-       
-       
     }
 
     &__description {
@@ -124,7 +129,7 @@
         }
 
         @include mixins.large {
-            font-size: 11px;
+            font-size: 9px;
         }
 
         @include mixins.extra-large {
