@@ -7,7 +7,7 @@
     color: colors.$very-dark-mostly-black;
     position: absolute;
     left: 50%;
-    top: 85%;
+    top: 97%;
     transform: translateX(-50%);
     text-align: center;
 
@@ -17,6 +17,7 @@
     
     @include mixins.medium {
         font-size: 14px;
+        top: 96%;
     }
 
     @include mixins.large {

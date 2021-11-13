@@ -86,7 +86,7 @@
 
     &__time {
        font-size: 37px;
-        height: 76%;
+        height: 77%;
        
        position: absolute;
        
@@ -96,7 +96,6 @@
 
        @include mixins.extra-small {
            font-size: 39px;
-          
     }
 
         @include mixins.small { 
@@ -105,11 +104,12 @@
 
         @include mixins.medium {
             font-size: 48px;
-            height: 70%;
+            height: 71%;
         }
 
         @include mixins.large {
             font-size: 53px;
+            height: 69%;
         }  
 
         @include mixins.extra-large {
