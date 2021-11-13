@@ -1,17 +1,28 @@
+@use "../abstracts/mixins";
 @use "../abstracts/colors";
 
 .attribution {
+    color: colors.$very-dark-mostly-black;
     position: absolute;
     left: 50%;
     top: 85%;
     transform: translateX(-50%);
     text-align: center;
 
-    &__text {
-        color: colors.$very-dark-mostly-black;
+    @include mixins.small { 
+        font-size: 13px;
     }
 
-    &__link {
-        color: colors.$very-dark-mostly-black;
+    @include mixins.extra-small { 
+        font-size: 10px;
+        
     }
+
+ 
+
+
+
+   
+        
+    
 }

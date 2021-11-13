@@ -79,33 +79,34 @@
     &__time {
        font-size: 37px;
        position: absolute;
-       top: 33.5%;
+       top: 38.5%;
        transform: translate(-50%);
        color: colors.$soft-red;
 
        @include mixins.extra-small {
            font-size: 39px;
-           top: 35.6%;
+           top: 36.2%;
     }
 
         @include mixins.small { 
             font-size: 42px;
-            top: 35%;
+            top: 35.8%;
         }
 
         @include mixins.medium {
             font-size: 48px;
-            top: 34.5%
+            top: 35.3%
         }
 
         @include mixins.large {
             font-size: 53px;
-            top: 33.6%;
+            top: 34.6%;
         }  
 
         @include mixins.extra-large {
             font-size: 60px;
-            top: 32.5%;
+            top: 33.7%;
+            
         }
        
        

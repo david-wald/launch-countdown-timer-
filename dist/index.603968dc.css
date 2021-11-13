@@ -132,38 +132,38 @@ a {
 .countdown__time {
   font-size: 37px;
   position: absolute;
-  top: 33.5%;
+  top: 38.5%;
   transform: translate(-50%);
   color: #fb6087;
 }
 @media (min-width: 429px) {
   .countdown__time {
     font-size: 39px;
-    top: 35.6%;
+    top: 36.2%;
   }
 }
 @media (min-width: 600px) {
   .countdown__time {
     font-size: 42px;
-    top: 35%;
+    top: 35.8%;
   }
 }
 @media (min-width: 768px) {
   .countdown__time {
     font-size: 48px;
-    top: 34.5%;
+    top: 35.3%;
   }
 }
 @media (min-width: 992px) {
   .countdown__time {
     font-size: 53px;
-    top: 33.6%;
+    top: 34.6%;
   }
 }
 @media (min-width: 1200px) {
   .countdown__time {
     font-size: 60px;
-    top: 32.5%;
+    top: 33.7%;
   }
 }
 .countdown__description {
@@ -215,17 +215,22 @@ a {
   }
 }
 .attribution {
+  color: #191a24;
   position: absolute;
   left: 50%;
   top: 85%;
   transform: translateX(-50%);
   text-align: center;
 }
-.attribution__text {
-  color: #191a24;
+@media (min-width: 600px) {
+  .attribution {
+    font-size: 13px;
+  }
 }
-.attribution__link {
-  color: #191a24;
+@media (min-width: 429px) {
+  .attribution {
+    font-size: 10px;
+  }
 }
 /* ABSTRACTS */
 /* BASE */
